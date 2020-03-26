@@ -13,6 +13,10 @@ star1 = Star.new({'first_name' => 'Chris',
                   'last_name' => 'Hemsworth'})
 star1.save
 
+star2 = Star.new({'first_name' => 'James',
+                  'last_name' => 'Hemsworth'})
+star2.save
+
 
 movie1 = Movie.new({'title'=> 'Thor', 'genre'=> 'action'})
 movie1.save()
@@ -22,8 +26,10 @@ movie2.save()
 
 casting1 = Casting.new({'id_stars' => star1.id, 'id_movies' => movie1.id, 'fee' => 4.50})
 casting2 = Casting.new({'id_stars' => star1.id, 'id_movies' => movie2.id, 'fee' => 7.50})
+casting3 = Casting.new({'id_stars' => star2.id, 'id_movies' => movie2.id, 'fee' => 7.50})
 casting1.save()
 casting2.save()
+casting3.save()
 
 
 
